@@ -18,6 +18,8 @@ export function Resume({props}) {
             + props.workExperienceInfo.position + ' '
             + props.workExperienceInfo.startDate + ' '
             + props.workExperienceInfo.endDate}</p>
+
+            <p>{props.skills}</p>
         </div>
     )
 }
