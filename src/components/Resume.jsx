@@ -13,6 +13,11 @@ export function Resume({props}) {
             <p>{props.educationInfo.university + ' ' 
             + props.educationInfo.specialization + ' '
             + props.educationInfo.graduationYear}</p>
+
+            <p>{props.workExperienceInfo.company + ' ' 
+            + props.workExperienceInfo.position + ' '
+            + props.workExperienceInfo.startDate + ' '
+            + props.workExperienceInfo.endDate}</p>
         </div>
     )
 }
