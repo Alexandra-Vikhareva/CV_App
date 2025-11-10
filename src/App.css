@@ -1,6 +1,41 @@
 #root {
-  max-width: 1280px;
   margin: 0 auto;
-  padding: 2rem;
+  padding: 1rem;
   text-align: center;
+}
+
+.content {
+  display: flex;
+  gap: 7rem;
+  align-items: flex-start;
+  min-height: 100vh;
+  padding: 1rem;
+}
+
+.forms {
+  flex: 0 0 500px;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.sheet {
+  position: sticky;
+  top: 0; 
+  flex: 1;
+}
+
+@media (max-width: 1150px) {
+  .content {
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+  }
+  
+  .forms {
+    flex: none;
+    width: 100%;
+    max-width: 600px;
+    margin: 0 auto;
+  }
 }
