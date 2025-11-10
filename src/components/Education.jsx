@@ -1,8 +1,6 @@
-import './Education.css'
-
 export function Education({onInputChange}) {
     return(
-        <div id="educationForm">
+        <div className="form">
             <p>Образование</p>
             <form onSubmit={(e) => e.preventDefault()}>
                 <label htmlFor="university">Учебное заведение: </label>

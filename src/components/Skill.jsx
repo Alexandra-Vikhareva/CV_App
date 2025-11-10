@@ -1,8 +1,6 @@
-import './Skill.css'
-
 export function Skill({onInputChange}) {
     return (
-        <div id="skillForm">
+        <div className="form">
             <p>Навыки</p>
             <form>
                 <label htmlFor="skills">Навыки: </label>

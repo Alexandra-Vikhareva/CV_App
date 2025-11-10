@@ -1,5 +1,3 @@
-import './Resume.css'
-
 export function Resume({props}) {
     console.log(props)
     return (

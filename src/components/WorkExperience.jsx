@@ -1,8 +1,6 @@
-import './WorkExperience.css'
-
 export function WorkExperience({onInputChange}) {
     return (
-        <div id="workExperienceForm">
+        <div className="form">
             <p>Опыт работы</p>
             <form>
                 <label htmlFor="company">Компания: </label>

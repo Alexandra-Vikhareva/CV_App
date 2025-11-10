@@ -1,10 +1,8 @@
-import './GeneralInformation.css'
-
 export function GeneralInformation({onInputChange}) {
 
     return (
         <>
-            <div id="generalInformationForm">
+            <div className="form">
                 <p>Общая информация</p>
                 <form onSubmit = {e => e.preventDefault()}>
                     <label htmlFor="name"> Имя: </label>
