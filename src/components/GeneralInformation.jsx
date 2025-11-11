@@ -10,7 +10,7 @@ export function GeneralInformation({onInputChange}) {
                     placeholder="Иван"
                     id="name"
                     name="name"
-                    required
+                    maxLength={15}
                     onChange = {(e) => onInputChange('name', e.target.value)}/>
 
                     <label htmlFor="secondName"> Фамилия: </label>
@@ -18,7 +18,7 @@ export function GeneralInformation({onInputChange}) {
                     placeholder="Иванов"
                     id="secondName"
                     name="secondName"
-                    required
+                    maxLength={20}
                     onChange = {(e) => onInputChange('secondName', e.target.value)}/>
 
                     <label htmlFor="position"> Должность: </label>
@@ -26,7 +26,6 @@ export function GeneralInformation({onInputChange}) {
                     placeholder="Разработчик"
                     id="position"
                     name="position"
-                    required
                     onChange = {(e) => onInputChange('position', e.target.value)}/>
 
                     <label htmlFor="phone"> Телефон: </label>
@@ -34,7 +33,6 @@ export function GeneralInformation({onInputChange}) {
                     placeholder="+79021234567"
                     id="phone"
                     name="phone"
-                    required
                     onChange = {(e) => onInputChange('phone', e.target.value)}/>
 
                     <label htmlFor="email"> Email: </label>
@@ -42,7 +40,6 @@ export function GeneralInformation({onInputChange}) {
                     placeholder="ivanushka@yandex.ru"
                     id="email"
                     name="email"
-                    required
                     onChange = {(e) => onInputChange('email', e.target.value)}/>
 
                 </form>
