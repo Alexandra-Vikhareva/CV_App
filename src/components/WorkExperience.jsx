@@ -28,6 +28,15 @@ export function WorkExperience({onInputChange}) {
                 name="endDate" 
                 id="endDate" 
                 onChange={(e) => onInputChange('endDate', e.target.value)}/>
+
+                <label htmlFor="responsibilities">Ключевые Обязанности: </label>
+                <textarea name="responsibilities" 
+                id="responsibilities"
+                placeholder="Кратко опишите свои основные обязанности" 
+                maxLength={250}
+                rows={5}
+                onChange={(e) => onInputChange('responsibilities', e.target.value)}>
+                </textarea>
             </form>
         </div>
     )

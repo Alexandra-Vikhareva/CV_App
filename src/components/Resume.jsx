@@ -21,31 +21,52 @@ export function Resume({props}) {
 
             <div className="education">
                 <h2>Образование</h2>
-                <div>
-                    <p className="organization">{props.educationInfo.university}</p>
-                    <p className="specialization">{props.educationInfo.specialization}</p>
-                    <p className="date">{'по ' + props.educationInfo.graduationYear}</p>
+                <div className="container">
+                    <div className="info">
+                        <p className="organization">{props.educationInfo.university}</p>
+                        <p className="specialization">{props.educationInfo.specialization}</p>
+                        <p className="date">{'по ' + props.educationInfo.graduationYear}</p>
+                    </div>
+                    <div className="description">
+                        <textarea name="achivements"
+                        id="achivements"
+                        disabled
+                        spellcheck
+                        rows={5}
+                        value={props.educationInfo.achivements}>
+                        </textarea>
+                    </div>
                 </div>
             </div>
 
             <div className="workExperience">
                 <h2>Опыт Работы</h2>
-                <div>
-                    <p className="organization">{props.workExperienceInfo.company}</p>
-                    <p className="specialization">{props.workExperienceInfo.position}</p>
-                    <p className="date">{'c ' + props.workExperienceInfo.startDate + ' ' +
-                                        'по ' + props.workExperienceInfo.endDate}</p>
+                <div className="container">
+                    <div className="info">
+                        <p className="organization">{props.workExperienceInfo.company}</p>
+                        <p className="specialization">{props.workExperienceInfo.position}</p>
+                        <p className="date">{'c ' + props.workExperienceInfo.startDate + ' ' +
+                                            'по ' + props.workExperienceInfo.endDate}</p>
+                    </div>
+                    <div className="description">
+                        <textarea name="responsibilities"
+                        id="responsibilities"
+                        disabled
+                        spellcheck
+                        rows={5}
+                        value={props.workExperienceInfo.responsibilities}>
+                        </textarea>
+                    </div>
                 </div>
             </div>
             
             <div className="skills">
                 <h2>Навыки</h2>
-                <textarea 
-                name="skills" 
+                <textarea name="skills" 
                 id="skills" 
                 disabled 
                 spellcheck 
-                rows={10}
+                rows={5}
                 value={props.skills}>
 
                 </textarea>

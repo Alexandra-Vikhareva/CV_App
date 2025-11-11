@@ -23,6 +23,15 @@ export function Education({onInputChange}) {
                 id="graduationYear" 
                 placeholder="2025" 
                 onChange={(e) => onInputChange('graduationYear', e.target.value)}/>
+
+                <label htmlFor="achivements">Достижения: </label>
+                <textarea name="achivements" 
+                id="achivements"
+                placeholder="Кратко опишите свои достижения" 
+                maxLength={250}
+                rows={5}
+                onChange={(e) => onInputChange('achivements', e.target.value)}>
+                </textarea>
             </form>
         </div>
     )

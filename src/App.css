@@ -27,9 +27,11 @@
 #resume {
   min-width: 450px;
   aspect-ratio: 21/29.7;
+  box-sizing: border-box;
   background-color: white;
   color: black;
-  padding: 2rem;
+  padding: 1.5rem 2rem;
+  overflow: hidden;
 }
 
 #resume p{
@@ -38,15 +40,15 @@
 
 #resume .name,
 #resume .secondName {
-  font-size: 2rem;
+  font-size: 1.75em;
   margin: 0;
   font-weight: 700;
 }
 
 #resume .position {
   text-align: center;
-  font-size: 1.5rem;
-  margin: 1rem;
+  font-size: 1.5em;
+  margin: 1em;
   color: #333;
 }
 
@@ -61,7 +63,7 @@
 #resume .contacts div {
   text-align: center;
   display: flex;
-  gap: 1rem;
+  gap: 1em;
 }
 
 #resume .contacts img {
@@ -69,7 +71,7 @@
 }
 
 #resume .contacts p {
-  margin: 0.25rem;
+  margin: 0.25em;
 }
 
 #resume h2 {
@@ -77,12 +79,12 @@
 }
 
 #resume .organization {
-  font-size: 1.5rem;
+  font-size: 1.5em;
   font-weight: 600;
 }
 
 #resume .date {
-  font-size: 0.75rem;
+  font-size: 0.75em;
   color: #333;
 }
 
@@ -93,6 +95,21 @@
   resize: none;
   width: 90%;
   overflow: hidden;
+  line-height: 1;
+}
+
+#resume .container{
+  display: flex;
+  gap: 1em;
+}
+
+#resume .container .description{
+  flex-basis: 60%;
+  box-sizing: border-box;
+}
+
+#resume .container .info{
+  flex: 1;
 }
 
 div .form {
@@ -119,6 +136,7 @@ div .form {
   transition: all 0.3s ease;
   box-sizing: border-box;
   font-family: inherit;
+  resize: none;
 }
 
 .form input:focus,
