@@ -149,6 +149,37 @@ label {
   color: #333;
 }
 
+body {
+  display: flex;
+  flex-direction: column;
+}
+
+header {
+  color: white;
+  padding: 1rem 2rem;
+  align-self: flex-start;
+}
+
+.title {
+  font-size: 3rem;
+  font-weight: bold;
+}
+
+footer {
+  color: white;
+  padding: 1rem;
+  margin-top: 3rem;
+}
+
+.github-link {
+  color: white;
+  text-decoration: none;
+}
+
+.github-link:hover {
+  color: #ccc;
+}
+
 @media (max-width: 1150px) {
   .content {
     flex-direction: column;
