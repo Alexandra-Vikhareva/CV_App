@@ -63,13 +63,9 @@ export function Resume({props}) {
                             <p className="date">{'по ' + props.educationInfo.graduationYear}</p>
                         </div>
                         <div className="description">
-                            <textarea name="achivements"
-                            id="achivements"
-                            disabled
-                            spellcheck
-                            rows={5}
-                            value={props.educationInfo.achivements}>
-                            </textarea>
+                            <div className="text-content">
+                                {props.educationInfo.achivements}
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -84,27 +80,18 @@ export function Resume({props}) {
                                                 'по ' + props.workExperienceInfo.endDate}</p>
                         </div>
                         <div className="description">
-                            <textarea name="responsibilities"
-                            id="responsibilities"
-                            disabled
-                            spellcheck
-                            rows={5}
-                            value={props.workExperienceInfo.responsibilities}>
-                            </textarea>
+                            <div className="text-content">
+                                {props.workExperienceInfo.responsibilities}
+                            </div>
                         </div>
                     </div>
                 </div>
                 
                 <div className="skills">
                     <h2>Навыки</h2>
-                    <textarea name="skills" 
-                    id="skills" 
-                    disabled 
-                    spellcheck 
-                    rows={5}
-                    value={props.skills}>
-
-                    </textarea>
+                    <div className="text-content">
+                        {props.skills}
+                    </div>
                 </div>
             </div>
 
