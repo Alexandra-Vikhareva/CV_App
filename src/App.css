@@ -180,6 +180,17 @@ footer {
   color: #ccc;
 }
 
+.saveToPDF{
+  padding: 0.5rem 1rem;
+  background: #4f46e5;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top: 2rem;
+  font-size: 1rem;
+}
+
 @media (max-width: 1150px) {
   .content {
     flex-direction: column;
